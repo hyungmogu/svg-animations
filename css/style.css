@@ -14,7 +14,8 @@ body {
   background: #fff;
   margin: 0 auto;
   height: 100%;
-  /* new line */ }
+  /* new line */
+  padding: 0 15px; }
 
 p {
   max-width: 350px;
