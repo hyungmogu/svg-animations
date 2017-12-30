@@ -37,10 +37,6 @@ header nav {
   padding-bottom: 50px;
   text-align: left; }
 
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px; }
-
 main {
   padding-top: 50px; }
 
@@ -78,5 +74,41 @@ footer {
   @media (max-width: 425px) {
     .logo__text--mobile {
       display: initial; } }
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.nav__item {
+  color: #8036A2;
+  padding: 10px; }
+  .nav__item:hover {
+    color: #62297c; }
+  .nav__item--home:before {
+    content: '';
+    background: url("../svg/nav-heart.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 28px;
+    height: 24px; }
+  .nav__item--contact:before {
+    content: '';
+    background: url("../svg/nav-contact.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 28px;
+    height: 24px; }
+  .nav__item--visitus:before {
+    content: '';
+    background: url("../svg/nav-location.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px; }
 
 /*# sourceMappingURL=style.css.map */
