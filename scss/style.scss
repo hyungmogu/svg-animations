@@ -49,11 +49,6 @@ header nav {
   text-align: left;
 }
 
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
 main {
   padding-top: 50px;
 }
@@ -108,5 +103,53 @@ footer {
     @media (max-width: 425px) {
       display: initial;
     }
+  }
+}
+
+//-------------------------- Components - Navigation ---------------------------
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  color: #8036A2;
+  padding: 10px;
+
+  &:hover {
+    color: darken(#8036A2, 10%);
+  }
+
+  &--home:before {
+    content: '';
+    background: url("../svg/nav-heart.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 28px;
+    height: 24px;
+  }
+
+  &--contact:before {
+    content: '';
+    background: url("../svg/nav-contact.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 28px;
+    height: 24px;
+  }
+
+  &--visitus:before {
+    content: '';
+    background: url("../svg/nav-location.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
   }
 }
