@@ -14,9 +14,24 @@
       <header>
         <nav>
           <ul class="nav">
-            <li class="nav__item"><a class="nav__item--home" href="#">Home</a></li>
-            <li class="nav__item"><a class="nav__item--visitus" href="#">Visit Us</a></li>
-            <li class="nav__item"><a class="nav__item--contact" href="#">Contact</a></li>
+            <li class="nav__item">
+              <svg width="28px" height="24px">
+                <use class="nav__icon nav__icon--home" xlink:href="sprite.svg#nav-heart"/>
+              </svg>
+              <a class="nav__item--home" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <svg width="28px" height="24px">
+                <use class="nav__icon nav__icon--visitus" xlink:href="sprite.svg#nav-location" />
+              </svg>
+              <a class="nav__item--visitus" href="#">Visit Us</a>
+            </li>
+            <li class="nav__item">
+              <svg width="24px" height="24px">
+                <use class="nav__icon nav__icon--contact" xlink:href="sprite.svg#nav-contact" />
+              </svg>
+              <a class="nav__item--contact" href="#">Contact</a>
+            </li>
           </ul>
         </nav>
         <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="140px" height="120px">

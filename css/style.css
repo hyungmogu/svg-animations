@@ -14,7 +14,8 @@ body {
   background: #fff;
   margin: 0 auto;
   height: 100%;
-  /* new line */ }
+  /* new line */
+  padding: 0 15px; }
 
 p {
   max-width: 350px;
@@ -79,36 +80,20 @@ footer {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  justify-content: space-between; }
+  @media (min-width: 426px) {
+    .nav {
+      justify-content: baseline; } }
 
 .nav__item {
-  color: #8036A2;
-  padding: 10px; }
-  .nav__item:hover {
-    color: #62297c; }
-  .nav__item--home:before {
-    content: '';
-    background: url("../svg/nav-heart.svg");
+  padding: 10px;
+  cursor: pointer; }
+  .nav__item * {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
-    width: 28px;
-    height: 24px; }
-  .nav__item--contact:before {
-    content: '';
-    background: url("../svg/nav-contact.svg");
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    width: 28px;
-    height: 24px; }
-  .nav__item--visitus:before {
-    content: '';
-    background: url("../svg/nav-location.svg");
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    width: 24px;
-    height: 24px; }
+    color: #39add1; }
+  .nav__item:hover * {
+    color: #298fae; }
 
 /*# sourceMappingURL=style.css.map */
