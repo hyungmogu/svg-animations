@@ -2,6 +2,8 @@
 @import "base/index";
 @import "components/index";
 
+//---------------------------------Base----------------------------------------
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
-  background-image: url("./svgs/background.svg");
+  background-image: url("../svg/background.svg");
   background-repeat: repeat;
 }
 
@@ -47,11 +49,6 @@ header nav {
   text-align: left;
 }
 
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
 main {
   padding-top: 50px;
 }
@@ -65,4 +62,94 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+//----------------------- Components - Corgi -----------------------------------
+
+.corgi--sable {
+  color: #B97F5B;
+}
+
+.corgi--red {
+  color: #834B29;
+}
+
+.corgi--fawn {
+  color: #E9AA82;
+}
+
+.corgi--stone {
+  color: #52595F;
+}
+
+//------------------------ Components - Logo -----------------------------------
+
+#logo {
+  @media (max-width: 424px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.logo__text {
+  &--desktop {
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+  &--mobile {
+    display: none;
+    @media (max-width: 425px) {
+      display: initial;
+    }
+  }
+}
+
+//-------------------------- Components - Navigation ---------------------------
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  color: #8036A2;
+  padding: 10px;
+
+  &:hover {
+    color: darken(#8036A2, 10%);
+  }
+
+  &--home:before {
+    content: '';
+    background: url("../svg/nav-heart.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 28px;
+    height: 24px;
+  }
+
+  &--contact:before {
+    content: '';
+    background: url("../svg/nav-contact.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 28px;
+    height: 24px;
+  }
+
+  &--visitus:before {
+    content: '';
+    background: url("../svg/nav-location.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
 }
