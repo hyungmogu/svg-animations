@@ -65,4 +65,18 @@ footer {
 .corgi--stone {
   color: #52595F; }
 
+@media (max-width: 424px) {
+  #logo {
+    display: block;
+    margin: 0 auto; } }
+
+@media (max-width: 425px) {
+  .logo__text--desktop {
+    display: none; } }
+.logo__text--mobile {
+  display: none; }
+  @media (max-width: 425px) {
+    .logo__text--mobile {
+      display: initial; } }
+
 /*# sourceMappingURL=style.css.map */
