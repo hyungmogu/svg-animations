@@ -1,0 +1,11 @@
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.7);
+  }
+}

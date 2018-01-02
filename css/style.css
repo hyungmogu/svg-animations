@@ -13,6 +13,13 @@
 *
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
+@keyframes pop {
+  0% {
+    transform: scale(0); }
+  30% {
+    transform: scale(1.1); }
+  60% {
+    transform: scale(0.7); } }
 body {
   text-align: center;
   margin: 0;
@@ -486,6 +493,10 @@ template {
     #logo {
       display: initial;
       margin: initial; } }
+
+.logo {
+  animation: pop 1s ease-out backwards;
+  transform-origin: 50% 50%; }
 
 .logo__text--desktop {
   display: none; }

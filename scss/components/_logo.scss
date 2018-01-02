@@ -8,6 +8,11 @@
   }
 }
 
+.logo {
+  animation: pop 1s ease-out backwards;
+  transform-origin: 50% 50%;
+}
+
 .logo__text {
   &--desktop {
     display: none;
