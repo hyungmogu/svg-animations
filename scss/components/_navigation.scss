@@ -1,9 +1,8 @@
 .nav {
   display: flex;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   justify-content: space-between;
+  @extend %box-model-reset;
 
   @media (min-width: 426px) {
     justify-content: baseline;
@@ -18,12 +17,15 @@
   * {
     display: inline-block;
     vertical-align: middle;
-    color: #39add1;
+  }
+
+  svg {
+    color: $color__link;
   }
 
   &:hover {
-    * {
-      color: darken(#39add1, 10%);
+    a, svg {
+      color: darken($color__link, 15%);
     }
   }
 }

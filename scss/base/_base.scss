@@ -1,62 +1,57 @@
 //---------------------------------Base----------------------------------------
 
 body {
-  margin: 0;
-  padding: 0;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: #111;
-  background: #edeff0;
-  background-image: url("../svg/background.svg");
-  background-repeat: repeat;
+  @extend %box-model-reset;
+  @extend %background;
+  @extend %text-style-primary;
 }
 
 #container {
-  max-width: 960px;
-  background: #fff;
+  max-width: em(960px);
+  background: $color__background--secondary;
   margin: 0 auto;
   height: 100%; /* new line */
-  padding: 0 15px;
+  padding: 0 em(15px);
 }
 
 p {
-  max-width: 350px;
-  margin: 35px auto 0;
+  max-width: em(350px);
+  margin: em(35px) auto 0;
   line-height: 2em;
   text-align: left;
 }
 
 a {
   text-decoration: none;
-  color: #39add1;
-  font-weight: 700;
+  color: $color__link;
+  font-weight: $font__weight--ultrabold;
 }
 
 a:hover {
-  color: #111;
+  color: darken($color__link, 15%);
 }
 
 header {
-  padding-top: 10px;
+  padding-top: em(10px);
 }
 
 header nav {
-  padding-bottom: 50px;
+  padding-bottom: em(50px);
   text-align: left;
 }
 
 main {
-  padding-top: 50px;
+  padding-top: em(50px);
 }
 
 main h2 {
-  font-size: 28px;
+  font-size: em(28px);
 }
 
 footer {
   width: 100%;
-  margin-top: 100px;
-  padding-bottom: 30px;
-  color: #ba8058;
+  margin-top: em(100px);
+  padding-bottom: em(30px);
+  color: $color__text--secondary;
 }
