@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+
+  @media (min-width: 426px) {
+    justify-content: baseline;
+  }
+
+}
+
+.nav__item {
+  padding: 10px;
+  cursor: pointer;
+
+  * {
+    display: inline-block;
+    vertical-align: middle;
+    color: #39add1;
+  }
+
+  &:hover {
+    * {
+      color: darken(#39add1, 10%);
+    }
+  }
+}
