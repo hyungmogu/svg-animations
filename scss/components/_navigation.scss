@@ -2,9 +2,9 @@
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  @extend %box-model-reset;
+  @include box-model-reset;
 
-  @media (min-width: 426px) {
+  @media #{$brk--mobile} {
     justify-content: baseline;
   }
 

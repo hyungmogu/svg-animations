@@ -1,0 +1,29 @@
+/*
+* @description - centers an object with display: block
+*
+*/
+@mixin center-block($top-margin: 0,$bot-margin: 0) {
+    margin: $top-margin auto $bot-margin;
+}
+
+/*
+*
+* @description - sets margin and padding of a box to 0
+*
+*/
+@mixin box-model-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text--primary {
+  font-family: $font-family--primary;
+  font-weight: $font__weight--light;
+  color: $color__text--primary;
+}
+
+@mixin background--primary {
+  background: $color__background--primary;
+  background-image: url("../svg/background.svg");
+  background-repeat: repeat;
+}

@@ -2,22 +2,22 @@
 
 body {
   text-align: center;
-  @extend %box-model-reset;
-  @extend %background;
-  @extend %text-style-primary;
+  @include box-model-reset;
+  @include background--primary;
+  @include text--primary;
 }
 
 #container {
+  @include center-block;
   max-width: em(960px);
   background: $color__background--secondary;
-  margin: 0 auto;
   height: 100%; /* new line */
   padding: 0 em(15px);
 }
 
 p {
+  @include center-block(em(35px),0);
   max-width: em(350px);
-  margin: em(35px) auto 0;
   line-height: 2em;
   text-align: left;
 }

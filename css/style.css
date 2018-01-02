@@ -1,37 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
-body {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: #111; }
-
-body {
-  background: #edeff0;
-  background-image: url("../svg/background.svg");
-  background-repeat: repeat; }
-
-body, .nav {
-  margin: 0;
-  padding: 0; }
-
 /*
 *
 * @description - converts font unit to em
 *
 */
+/*
+* @description - centers an object with display: block
+*
+*/
+/*
+*
+* @description - sets margin and padding of a box to 0
+*
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
 body {
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #edeff0;
+  background-image: url("../svg/background.svg");
+  background-repeat: repeat;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #111; }
 
 #container {
+  margin: 0 auto 0;
   max-width: 60em;
   background: white;
-  margin: 0 auto;
   height: 100%;
   /* new line */
   padding: 0 0.9375em; }
 
 p {
-  max-width: 21.875em;
   margin: 2.1875em auto 0;
+  max-width: 21.875em;
   line-height: 2em;
   text-align: left; }
 
@@ -456,7 +459,9 @@ template {
 .nav {
   display: flex;
   list-style-type: none;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
   @media (min-width: 426px) {
     .nav {
       justify-content: baseline; } }
