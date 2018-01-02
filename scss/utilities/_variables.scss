@@ -1,8 +1,12 @@
 //------------------------------------------------
-// Font
+// Font URL
 //------------------------------------------------
 $font__url--google: "https://fonts.googleapis.com/css?family=Roboto+Slab:700,300";
 
+//------------------------------------------------
+// Font
+//------------------------------------------------
+$font-family--primary: 'Roboto Slab', serif;
 
 //------------------------------------------------
 // Font Size
@@ -19,7 +23,7 @@ $font__weight--bold: 700;
 $font__weight--ultrabold: 900;
 
 //------------------------------------------------
-// Colors -- general
+// Colors
 //------------------------------------------------
 $porcelain: #edeff0; // body background color
 $scooter: #39add1; // link color
@@ -40,3 +44,9 @@ $color__corgi--sable: $muddy-water;
 $color__corgi--red: $nutmeg;
 $color__corgi--fawn: $tacao;
 $color__corgi--stone: $abbey;
+
+//------------------------------------------------
+// Grid - breakpoints
+//------------------------------------------------
+
+$brk--mobile: "(min-width: 426px)";
