@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
+.nav__item a, .nav__item svg {
+  transition: 0.4s ease-out; }
+
 /*
 *
 * @description - converts font unit to em
@@ -12,7 +16,6 @@
 * @description - sets margin and padding of a box to 0
 *
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
 body {
   text-align: center;
   margin: 0;
@@ -472,7 +475,7 @@ template {
   .nav__item * {
     display: inline-block;
     vertical-align: middle; }
-  .nav__item svg {
+  .nav__item a, .nav__item svg {
     color: #39add1; }
   .nav__item:hover a, .nav__item:hover svg {
     color: #247e9a; }

@@ -19,8 +19,9 @@
     vertical-align: middle;
   }
 
-  svg {
+  a, svg {
     color: $color__link;
+    @extend %animation--menu-item;
   }
 
   &:hover {
