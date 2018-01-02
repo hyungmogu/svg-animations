@@ -43,7 +43,8 @@ p {
   margin: 2.1875em auto 0;
   max-width: 21.875em;
   line-height: 2em;
-  text-align: left; }
+  text-align: justify;
+  text-justify: inter-word; }
 
 a {
   text-decoration: none;

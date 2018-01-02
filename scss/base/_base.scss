@@ -19,7 +19,8 @@ p {
   @include center-block(em(35px),0);
   max-width: em(350px);
   line-height: 2em;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 a {
