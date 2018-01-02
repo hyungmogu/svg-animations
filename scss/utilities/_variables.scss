@@ -1,0 +1,42 @@
+//------------------------------------------------
+// Font
+//------------------------------------------------
+$font__url--google: "https://fonts.googleapis.com/css?family=Roboto+Slab:700,300";
+
+
+//------------------------------------------------
+// Font Size
+//------------------------------------------------
+$font__size--base: 16px;
+
+//------------------------------------------------
+// Font Weight
+//------------------------------------------------
+$font__weight--thin: 100;
+$font__weight--light: 300;
+$font__weight--medium: 400;
+$font__weight--bold: 700;
+$font__weight--ultrabold: 900;
+
+//------------------------------------------------
+// Colors -- general
+//------------------------------------------------
+$porcelain: #edeff0; // body background color
+$scooter: #39add1; // link color
+$cod-grey: #111; // link hover color
+$muddy-water: #ba8058; // footer color
+
+$nutmeg: #834B29; //corgi red
+$tacao: #E9AA82; //corgi fawn
+$abbey: #52595F; //corgi stone
+
+$color__link: $scooter;
+$color__text--primary: $cod-grey;
+$color__text--secondary: $muddy-water;
+$color__background--primary: $porcelain;
+$color__background--secondary: white;
+
+$color__corgi--sable: $muddy-water;
+$color__corgi--red: $nutmeg;
+$color__corgi--fawn: $tacao;
+$color__corgi--stone: $abbey;

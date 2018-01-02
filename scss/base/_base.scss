@@ -1,0 +1,57 @@
+//---------------------------------Base----------------------------------------
+
+body {
+  text-align: center;
+  @extend %box-model-reset;
+  @extend %background;
+  @extend %text-style-primary;
+}
+
+#container {
+  max-width: em(960px);
+  background: $color__background--secondary;
+  margin: 0 auto;
+  height: 100%; /* new line */
+  padding: 0 em(15px);
+}
+
+p {
+  max-width: em(350px);
+  margin: em(35px) auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: $color__link;
+  font-weight: $font__weight--ultrabold;
+}
+
+a:hover {
+  color: darken($color__link, 15%);
+}
+
+header {
+  padding-top: em(10px);
+}
+
+header nav {
+  padding-bottom: em(50px);
+  text-align: left;
+}
+
+main {
+  padding-top: em(50px);
+}
+
+main h2 {
+  font-size: em(28px);
+}
+
+footer {
+  width: 100%;
+  margin-top: em(100px);
+  padding-bottom: em(30px);
+  color: $color__text--secondary;
+}

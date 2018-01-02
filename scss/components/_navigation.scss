@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  @extend %box-model-reset;
+
+  @media (min-width: 426px) {
+    justify-content: baseline;
+  }
+
+}
+
+.nav__item {
+  padding: 10px;
+  cursor: pointer;
+
+  * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  svg {
+    color: $color__link;
+  }
+
+  &:hover {
+    a, svg {
+      color: darken($color__link, 15%);
+    }
+  }
+}
