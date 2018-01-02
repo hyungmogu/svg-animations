@@ -1,37 +1,47 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
-body {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: #111; }
-
-body {
-  background: #edeff0;
-  background-image: url("../svg/background.svg");
-  background-repeat: repeat; }
-
-body, .nav {
-  margin: 0;
-  padding: 0; }
-
 /*
 *
 * @description - converts font unit to em
 *
 */
+/*
+* @description - centers an object with display: block
+*
+*/
+/*
+*
+* @description - sets margin and padding of a box to 0
+*
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
+@keyframes pop {
+  0% {
+    transform: scale(0); }
+  30% {
+    transform: scale(1.1); }
+  60% {
+    transform: scale(0.7); } }
 body {
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #edeff0;
+  background-image: url("../svg/background.svg");
+  background-repeat: repeat;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #111; }
 
 #container {
+  margin: 0 auto 0;
   max-width: 60em;
   background: white;
-  margin: 0 auto;
   height: 100%;
   /* new line */
   padding: 0 0.9375em; }
 
 p {
-  max-width: 21.875em;
   margin: 2.1875em auto 0;
+  max-width: 21.875em;
   line-height: 2em;
   text-align: left; }
 
@@ -456,35 +466,48 @@ template {
 .nav {
   display: flex;
   list-style-type: none;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
   @media (min-width: 426px) {
     .nav {
       justify-content: baseline; } }
 
 .nav__item {
   padding: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
   .nav__item * {
     display: inline-block;
     vertical-align: middle; }
-  .nav__item svg {
-    color: #39add1; }
+  .nav__item a, .nav__item svg {
+    color: #39add1;
+    transition: 0.4s ease-out; }
   .nav__item:hover a, .nav__item:hover svg {
     color: #247e9a; }
 
-@media (max-width: 424px) {
-  #logo {
-    display: block;
-    margin: 0 auto; } }
+#logo {
+  display: block;
+  margin: 0 auto 0; }
+  @media (min-width: 426px) {
+    #logo {
+      display: initial;
+      margin: initial; } }
 
-@media (max-width: 425px) {
-  .logo__text--desktop {
-    display: none; } }
-.logo__text--mobile {
+.logo {
+  animation: pop 1s ease-out backwards;
+  transform-origin: 50% 50%; }
+
+.logo__text--desktop {
   display: none; }
-  @media (max-width: 425px) {
-    .logo__text--mobile {
+  @media (min-width: 426px) {
+    .logo__text--desktop {
       display: initial; } }
+.logo__text--mobile {
+  display: initial; }
+  @media (min-width: 426px) {
+    .logo__text--mobile {
+      display: none; } }
 
 .corgi--sable {
   color: #ba8058; }
