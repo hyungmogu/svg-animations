@@ -472,19 +472,24 @@ template {
   .nav__item:hover a, .nav__item:hover svg {
     color: #247e9a; }
 
-@media (max-width: 424px) {
-  #logo {
-    display: block;
-    margin: 0 auto; } }
+#logo {
+  display: block;
+  margin: 0 auto; }
+  @media (min-width: 426px) {
+    #logo {
+      display: initial;
+      margin: initial; } }
 
-@media (max-width: 425px) {
-  .logo__text--desktop {
-    display: none; } }
-.logo__text--mobile {
+.logo__text--desktop {
   display: none; }
-  @media (max-width: 425px) {
-    .logo__text--mobile {
+  @media (min-width: 426px) {
+    .logo__text--desktop {
       display: initial; } }
+.logo__text--mobile {
+  display: initial; }
+  @media (min-width: 426px) {
+    .logo__text--mobile {
+      display: none; } }
 
 .corgi--sable {
   color: #ba8058; }
