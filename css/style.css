@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700,300");
-.nav__item a, .nav__item svg {
-  transition: 0.4s ease-out; }
-
 /*
 *
 * @description - converts font unit to em
@@ -471,18 +468,20 @@ template {
 
 .nav__item {
   padding: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
   .nav__item * {
     display: inline-block;
     vertical-align: middle; }
   .nav__item a, .nav__item svg {
-    color: #39add1; }
+    color: #39add1;
+    transition: 0.4s ease-out; }
   .nav__item:hover a, .nav__item:hover svg {
     color: #247e9a; }
 
 #logo {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 0; }
   @media (min-width: 426px) {
     #logo {
       display: initial;

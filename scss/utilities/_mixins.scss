@@ -27,3 +27,16 @@
   background-image: url("../svg/background.svg");
   background-repeat: repeat;
 }
+
+@mixin animation__menu-item {
+  a, svg {
+    color: $color__link;
+    transition: 0.4s ease-out;
+  }
+
+  &:hover {
+    a, svg {
+      color: darken($color__link, 15%);
+    }
+  }
+}
