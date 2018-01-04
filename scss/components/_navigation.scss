@@ -21,4 +21,5 @@
   }
 
   @include animation__menu-item;
+  @include animation--pop-in-cascade(0.25, 0.8, 3);
 }
