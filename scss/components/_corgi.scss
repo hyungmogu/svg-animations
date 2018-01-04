@@ -1,5 +1,11 @@
 .corgi {
   @include animation--pop-in-cascade(0.225,0.8,4);
+
+  &:hover {
+    use {
+      @include animation--swaying;
+    }
+  }
 }
 
 .corgi--sable {
