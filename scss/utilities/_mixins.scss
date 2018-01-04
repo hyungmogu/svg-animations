@@ -40,3 +40,14 @@
     }
   }
 }
+
+@mixin animation--pop-in-cascade($base_time,$finish_time, $num_e) {
+  animation: pop #{$finish_time}s ease-out backwards;
+  transform-origin: 50% 50%;
+
+  @for $i from 1 through $num_e {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$base_time * $i}s;
+    }
+  }
+}

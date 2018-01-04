@@ -1,3 +1,7 @@
+.corgi {
+  @include animation--pop-in-cascade(0.225,0.8,4);
+}
+
 .corgi--sable {
   color: $color__corgi--sable;
 }
