@@ -51,3 +51,8 @@
     }
   }
 }
+
+@mixin animation--swaying {
+  animation: swaying 1s ease-out;
+  transform-origin: 50% 65%
+}
