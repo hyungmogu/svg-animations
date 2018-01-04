@@ -29,6 +29,9 @@
 }
 
 @mixin animation__menu-item {
+  animation: pop 0.8s ease-out backwards;
+  transform-origin: 50% 50%;
+
   a, svg {
     color: $color__link;
     transition: 0.4s ease-out;
@@ -37,6 +40,12 @@
   &:hover {
     a, svg {
       color: darken($color__link, 15%);
+    }
+  }
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{0.25 * $i}s;
     }
   }
 }
