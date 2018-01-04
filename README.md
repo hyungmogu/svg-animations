@@ -1,17 +1,15 @@
 # Team Treehouse FETD 8th Project: SVG Animations
 
-This is 8th project for Team Treehouse's Tech degree.
-
-The rubric of this project can be found [here](https://drive.google.com/open?id=1EXn3sI8VjWBXkcxjzriAZX_0QbtVfV5o)
-
-The finished project looks like the following: [desktop](https://drive.google.com/open?id=1mnGd4TVGv99iHWQq3tiP5gvPR9rAd-et)
-
-
 ## Table of Contents
+- Rubric
 - Demo
 - Installation
 - Usage
 
+## Rubric
+- See [here](https://drive.google.com/open?id=1EXn3sI8VjWBXkcxjzriAZX_0QbtVfV5o)
+
+- The finished version of this project must look like the following: [desktop](https://drive.google.com/open?id=1mnGd4TVGv99iHWQq3tiP5gvPR9rAd-et)
 
 ## Demo
 - Demo of this project can be viewed [here](https://hyungmogu.github.com/svg-animations)

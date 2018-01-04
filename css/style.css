@@ -20,6 +20,9 @@
     transform: scale(1.1); }
   60% {
     transform: scale(0.7); } }
+@keyframes pop_2 {
+  0% {
+    transform: scale(0); } }
 body {
   text-align: center;
   margin: 0;
@@ -43,7 +46,8 @@ p {
   margin: 2.1875em auto 0;
   max-width: 21.875em;
   line-height: 2em;
-  text-align: left; }
+  text-align: justify;
+  text-justify: inter-word; }
 
 a {
   text-decoration: none;
@@ -476,7 +480,9 @@ template {
 .nav__item {
   padding: 10px;
   cursor: pointer;
-  text-align: center; }
+  text-align: center;
+  animation: pop 0.8s ease-out backwards;
+  transform-origin: 50% 50%; }
   .nav__item * {
     display: inline-block;
     vertical-align: middle; }
@@ -485,6 +491,12 @@ template {
     transition: 0.4s ease-out; }
   .nav__item:hover a, .nav__item:hover svg {
     color: #247e9a; }
+  .nav__item:nth-child(1) {
+    animation-delay: 0.25s; }
+  .nav__item:nth-child(2) {
+    animation-delay: 0.5s; }
+  .nav__item:nth-child(3) {
+    animation-delay: 0.75s; }
 
 #logo {
   display: block;
@@ -508,6 +520,18 @@ template {
   @media (min-width: 426px) {
     .logo__text--mobile {
       display: none; } }
+
+.corgi {
+  animation: pop 0.8s ease-out backwards;
+  transform-origin: 50% 50%; }
+  .corgi:nth-child(1) {
+    animation-delay: 0.225s; }
+  .corgi:nth-child(2) {
+    animation-delay: 0.45s; }
+  .corgi:nth-child(3) {
+    animation-delay: 0.675s; }
+  .corgi:nth-child(4) {
+    animation-delay: 0.9s; }
 
 .corgi--sable {
   color: #ba8058; }
