@@ -20,9 +20,15 @@
     transform: scale(1.1); }
   60% {
     transform: scale(0.7); } }
-@keyframes pop_2 {
-  0% {
-    transform: scale(0); } }
+@keyframes swaying {
+  25% {
+    transform: rotate(-25deg); }
+  50% {
+    transform: rotate(0deg); }
+  75% {
+    transform: rotate(25deg); }
+  100% {
+    transform: rotate(0deg); } }
 body {
   text-align: center;
   margin: 0;
@@ -532,6 +538,9 @@ template {
     animation-delay: 0.675s; }
   .corgi:nth-child(4) {
     animation-delay: 0.9s; }
+  .corgi:hover use {
+    animation: swaying 1s ease-out;
+    transform-origin: 50% 65%; }
 
 .corgi--sable {
   color: #ba8058; }
