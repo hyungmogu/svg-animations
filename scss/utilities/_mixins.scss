@@ -29,9 +29,6 @@
 }
 
 @mixin animation__menu-item {
-  animation: pop 0.8s ease-out backwards;
-  transform-origin: 50% 50%;
-
   a, svg {
     color: $color__link;
     transition: 0.4s ease-out;
@@ -42,10 +39,15 @@
       color: darken($color__link, 15%);
     }
   }
+}
 
-  @for $i from 1 through 3 {
+@mixin animation--pop-in-cascade($base_time,$finish_time, $num_e) {
+  animation: pop #{$finish_time}s ease-out backwards;
+  transform-origin: 50% 50%;
+
+  @for $i from 1 through $num_e {
     &:nth-child(#{$i}) {
-      animation-delay: #{0.25 * $i}s;
+      animation-delay: #{$base_time * $i}s;
     }
   }
 }
