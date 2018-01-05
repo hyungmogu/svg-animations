@@ -22,11 +22,11 @@
     transform: scale(0.7); } }
 @keyframes swaying {
   25% {
-    transform: rotate(-25deg); }
+    transform: rotate(-15deg); }
   50% {
     transform: rotate(0deg); }
   75% {
-    transform: rotate(25deg); }
+    transform: rotate(20deg); }
   100% {
     transform: rotate(0deg); } }
 body {
