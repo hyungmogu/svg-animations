@@ -1,4 +1,6 @@
 .corgi {
+  width: 170px;
+  height: 210px;
   @include animation--pop-in-cascade(0.225,0.8,4);
 
   &:hover {

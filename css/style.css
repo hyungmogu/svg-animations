@@ -528,6 +528,8 @@ template {
       display: none; } }
 
 .corgi {
+  width: 170px;
+  height: 210px;
   animation: pop 0.8s ease-out backwards;
   transform-origin: 50% 50%; }
   .corgi:nth-child(1) {
