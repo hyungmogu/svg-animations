@@ -22,11 +22,11 @@
     transform: scale(0.7); } }
 @keyframes swaying {
   25% {
-    transform: rotate(-25deg); }
+    transform: rotate(-14deg); }
   50% {
     transform: rotate(0deg); }
   75% {
-    transform: rotate(25deg); }
+    transform: rotate(18deg); }
   100% {
     transform: rotate(0deg); } }
 body {
@@ -528,6 +528,8 @@ template {
       display: none; } }
 
 .corgi {
+  width: 170px;
+  height: 210px;
   animation: pop 0.8s ease-out backwards;
   transform-origin: 50% 50%; }
   .corgi:nth-child(1) {
